@@ -9,7 +9,7 @@
 <br><br>
 <hr>
 <br><br>
-<p align="center">Best rates are guaranteed</p>
+<p align="center">Najbolje cene su na sajtu</p>
 <br><br>
 <p align="center">Hotel Cacak se trudi da vas ugosti da uzivate u svom ostanku</p>
 <br><br>
