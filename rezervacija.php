@@ -1,3 +1,53 @@
+<?php
+
+
+	$conn = mysqli_connect('localhost','FuzzyStak0','stak01987','hotel');
+	if(!$conn){
+		echo 'Connection error' . mysqli_connect_error();
+	}
+
+	$odlazak = $dolazak = $odrasli = '';
+	$errors = array('dolazak' => '', 'odlazak' => '', 'odrasli' => '');
+
+	if(isset($_POST['potvrda'])){
+
+		// Ako je prazno
+		if(empty($_POST['dolazak'])){
+			$errors['dolazak'] = 'Unesite vreme dolaska';
+		}else{
+			$dolazak = $_POST['dolazak'];
+		}
+
+		if(empty($_POST['odlazak'])){
+			$errors['odlazak'] = 'Unesite vreme odlazak';
+		}else{
+			$odlazak = $_POST['odlazak'];
+		}
+
+		if(empty($_POST['odrasli'])){
+			$errors['odrasli'] = 'Unesite broj osoba';
+		}else{
+			$odrasli = $_POST['odrasli'];
+			if(!preg_match('/^\d+$/', $odrasli)){
+				echo 'pogresko';
+				$errors['odrasli'] = 'Unesi broj umesto teksta';
+			}
+		}
+
+
+		if(array_filter($errors)){
+			echo "form is empty";
+		}else{
+			header("index: RezDetalji.php");
+		}
+	}
+	
+
+
+ ?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +64,7 @@
 <p align="center">Hotel Cacak se trudi da vas ugosti da uzivate u svom ostanku</p>
 <br><br>
 
-<form>
+<form action="rezervacija.php" method="POST">
 	<ul>
 
 		<li>
