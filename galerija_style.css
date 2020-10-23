@@ -1,0 +1,21 @@
+body{
+	font-family: sans-serif;
+	background-color: #F2F5FC;
+}
+h1{
+	font-family: Monotype Corsiva;
+	text-align: center;
+	color: #0E2156;
+	margin-left: 30px 0 50px;
+	font-size: 55px
+}
+.gallery{
+	margin: 10px 50px;
+	text-align: center;
+}
+.gallery img{
+	transition: 1s;
+}
+.gallery img:hover{
+	transform: scale(1.1);
+}
