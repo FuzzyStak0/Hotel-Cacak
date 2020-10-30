@@ -1,0 +1,31 @@
+.column {
+  float: left;
+  width: 50%;
+  background-color: #F2F5FC;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2{
+	font-family: Monotype Corsiva;
+	font-size: 77px;
+	color: #0E2156;
+}
+p{
+	font-family: sitka heading;
+	font-size: 20px;
+	color: black;
+}
+.border{
+	border-style: solid;
+	border-color: #0E2156;
+	background-color: #F2F5FC;
+}
+.wrap {
+   word-wrap: break-word;
+   width: 600px;
+}
