@@ -1,0 +1,49 @@
+.column{
+    float: left;
+    width: 50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+h2{
+    font-size: 50px;
+    font-family: Dancing Script;
+    color: #0E2156;
+}
+p{
+    font-size: 30px;
+    text-align: justify;
+    font-family: Sitka Heading;
+    word-wrap: break-word;
+    width: 800px;
+    
+}
+.border{
+    border-style: solid;
+    border-color: #0E2156;
+    background-color: #F2F5FC;
+    border-right: 0;
+}
+.column1{
+    float: left;
+    width: 16.3%;
+}
+h3{
+    font-size: 90px;
+    font-family: Sitka Heading;
+    text-align: center;
+    color: #0E2156;
+}
+h4{
+    font-size: 30px;
+    font-family: Dancing Script;
+    text-align: center;
+    color: #0E2156;
+}
+.border1{
+    border-style: solid;
+    border-color: #0E2156;
+    background-color: #F2F5FC;
+}
