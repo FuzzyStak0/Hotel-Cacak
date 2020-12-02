@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.js">
+	<title></title>
+</head>
+<body>
+    <div class="row">
+
+        <div class="col">
+    <label>vicgla</label>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <input class="form-control" type="date" name="txtDate" id="txtDate">
+<script type="text/javascript">
+	$(function(){
+    var dtToday = new Date();
+    
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+        day = '0' + day.toString();
+    
+    var maxDate = year + '-' + month + '-' + day;
+    
+    $('#txtDate').attr('min', maxDate);
+});
+</script>
+        </div>
+
+        <div class="col">
+    <label>glavic</label>
+    <input class="form-control" type="date" name="checkOut" id="checkOut">
+    <script type="text/javascript">
+ function updatedate() {
+    var firstdate = document.getElementById("txtDate").value;
+    document.getElementById("checkOut").value = "";
+    document.getElementById("checkOut").setAttribute("min",firstdate);
+  }
+</script>
+        </div>
+</div>
+
+</body>
+</html>
