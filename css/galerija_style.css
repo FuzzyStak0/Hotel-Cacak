@@ -1,0 +1,20 @@
+body{
+	background-color: #F2F5FC;
+}
+h1{
+	font-family: Dancing Script;
+	text-align: center;
+	color: #0E2156;
+	margin: 60px auto;
+	font-size: 75px;
+}
+.gallery{
+	margin: 10px 50px;
+	text-align: center;
+}
+.gallery img{
+	transition: 1s;
+}
+.gallery img:hover{
+	transform: scale(1.1);
+}

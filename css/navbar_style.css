@@ -1,0 +1,143 @@
+
+.navbar{
+	padding: 0px 10px;
+	height: 115px;
+}
+
+.navbar-brand{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.nav-item,
+.rezervacija-nav-dugme
+{
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.kontakt-nav-dugme{
+	font-size: 16px;
+	font-family: Sitka heading;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: #0E2156;
+	line-height: 1.3;
+}
+
+.brand-logo{
+	position: relative;
+	height: 240px;
+	width: 240px;
+}
+
+.kontakt-nav-dugme:hover
+{
+	color: rgba(0, 0, 0, 0.5);
+} 
+
+.toggler-label{
+	font-size: 16px;
+	font-family: sitka heading;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-right: 10px;
+	text-decoration: none;
+	color: #0E2156;
+}
+
+
+.navbar-light .navbar-nav .nav-item.active .nav-link,
+.dugme
+{
+
+	background: #0E2156;
+	color: #fff; 
+	padding: 12px 10px;
+	margin-right: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	padding: 12px 10px;
+}
+
+.bg-light, .navbar-light{
+	background-color: #fff !important;
+}
+
+/*NAVBAR MEDIA*/
+
+
+.navbar-collapse
+{
+	background: #F2F5FC;
+	position: absolute;
+	top: 110px;
+	left: 0;
+	width: 100%;
+	height: 1080px;
+	z-index: 99;
+}
+.navbar-light .navbar-nav .nav-link
+{
+	margin: 15px 0;
+	padding: 0;
+	text-align: center;
+}
+.navbar-light .navbar-nav .nav-item.active .nav-link
+{
+	margin-right: 0;
+
+}
+
+
+@media (max-width: 1210px){
+	.kontakt-nav-dugme{
+		display: none;
+		margin-left: 15px;
+	}
+}
+
+
+@media (max-width: 991px){
+	.dugme{
+		display: none;
+	}
+}
+
+
+
+
+/*DUGME REZERVACIJA*/
+
+.dugme{
+    background: #0E2156; 
+    margin-right: 50px;
+    width: 145px;
+    height: 50px;
+    position: relative;
+}
+
+.granica{
+    position: absolute;
+    border: 1.8px solid #E1E9FC;
+    padding: 0.4rem 1.3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: sitka heading;
+    color: #E1E9FC;
+}
+
+.granica:hover, .dugme:hover{
+	background-color: #E1E9FC;
+	color: #0E2156;
+	border-color: #0E2156;
+
+}
+
+
+

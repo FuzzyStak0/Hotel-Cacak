@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/footer_style.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/773f4a36ec.js" crossorigin="anonymous"></script>
+    <style>slike/Index/
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #F2F5FC;
+        }
+        .jumbotron {
+            padding: 2rem;
+            background-color: #E1E9FC;
+            border: 1px solid #0E2156;
+            height: 100%;
+        }
+
+        .my-container{
+            margin: 15px;
+        }
+
+        p {
+            font-family: Sitka heading;
+            font-size: 22px;
+            line-height: 1.3;
+            margin-top: 20px;
+        }
+        h1 {
+            font-family: Dancing Script;
+            font-size: 50px;
+            color: #0E2156;
+            text-align: center;
+        }
+        h2{
+            font-family: Sitka heading;
+            font-size: 30px;
+            color: #0E2156;
+            text-align: left;
+        }
+        .link-vise {
+            text-align: right;
+        }
+        .link-vise a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #0E2156;
+        }
+        .link-vise a:hover{
+            color: #777;
+        }
+        @media(max-width: 1568px){
+            p{
+                font-size: 20px;
+            }
+        }
+        @media(max-width: 1595px){
+            p{
+                font-size: 18px;
+            }
+        }
+        @media(max-width: 1371px){
+            p{
+                font-size: 16px;
+            }
+        }
+        @media(max-width: 1244px){
+            p{
+                font-size: 15px;
+            }
+            h1{
+                font-size: 48px;
+            }
+            h2{
+                font-size: 28px;
+            }
+        }
+        @media(max-width: 1210px){
+            p{
+                font-size: 15px;
+                margin-top: 10px;
+            }
+            h1{
+                font-size: 42px;
+            }
+            h2{
+                font-size: 26px;
+            }
+        }
+        @media(max-width: 1190px){
+            p{
+                font-size: 13px;
+                margin-top: 5px;
+                font-weight: bold;
+            }
+            h1{
+                font-size: 38px;
+            }
+            h2{
+                font-size: 22px;
+            }
+            .jumbotron{
+                padding: 1rem;
+            }
+        }
+        @media(max-width: 919px){
+            p{
+                font-size: 11px;
+                margin-top: 5px;
+                font-weight: bold;
+            }
+            h1{
+                font-size: 34px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            .jumbotron{
+                padding: 1rem;
+            }
+        }
+        @media(max-width: 843px){
+            p{
+                font-size: 10px;
+                margin-top: 3.5px;
+                font-weight: bold;
+            }
+            h1{
+                font-size: 30px;
+            }
+            h2{
+                font-size: 18px;
+            }
+            .jumbotron{
+                padding: 1rem;
+            }
+        }
+        @media(max-width: 767px){
+            #prvi{
+                border-bottom: none;
+            }
+            #prvi img{
+                border: 1px solid #0E2156;
+                border-top: none;
+            }
+            #drugi{
+                border-top: none;
+                border-bottom: none;
+            }
+            #treci{
+                border-top: none;
+            }
+            #treci img{
+                border: 1px solid #0E2156;
+                border-bottom: none;
+            }
+            .mb-3{
+                margin-bottom: 0 !important;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+          <a href="kontakt.html" class="kontakt-nav-dugme d-flex" style="align-items: center;">
+            <img style="margin-right: 5px;" src="slike/Index/email.png" width="30" height="30">
+            <p>Kontakt</p>
+          </div>  
+          <a class="navbar-brand" href="index.html"><img src="slike/Index/Logo.png" style="height: 100px; width: 100px;"></a>
+          <a class="dugme ml-lg-auto" href="rezervacija.php">
+              <div class="granica">Rezervacija</div>
+          </a>
+          <a class="toggler-label">Meni</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="rezervacija.html">Rezervacija <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ohotelu.html">O Hotelu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobe.html">Sobe i apartmani</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restoran.html">Restoran</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="spaifitnes.html">Spa i fitness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="konferencijskasala.html">Konferencijska sala</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galerija.html">Galerija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="my-container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <div id="prvi" class="jumbotron">
+                        <h1><span style="font-family: Arial;">|</span>O Hotelu</h1>
+                        <p>
+                            Dobrodošli u hotel Čačak, znamenitost Sutomora, jednog od najznačajnijih arhitektonskih dragulja crnogorskog primorja, izgrađenog u stilu ruske secesije, koji je pod zaštitom države od druge polovine prethodnog veka. Ovu velelepno zdanje otvorio je kralj Petar I Karađorđević 1908. godine. Tradicija postojanja i poslovanja duža od jednog veka učinila je da ovaj hotel poseti preko 45 miliona ljudi, uključujući poznata imena poput: Albert Ajnštajna, Ane Pavlove, Leonida Brežnjeva, Indire Gandi, Rej Čarlsa, Robert De Nira, Bred Pita, Maksim Gorkog, Kirk Daglasa, Majkl Daglasa, Mile Jovovič i mnogi drugi.
+                        </p>
+                        <p class="link-vise">
+                            <a href="ohotelu.html">Vise <i class="fas fa-arrow-right"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div id="prvi" class="col-md-7 col-sm-12">
+                    <img class="img-fluid" src="slike/Index/slika1.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="my-container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div id="mobile-slider1" class="row flex-column"> 
+                        <div class="col mb-3"><img class="img-fluid" src="slike/Index/image4.png" alt=""></div>
+                        <div class="col"><img class="img-fluid" src="slike/Index/image3.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div id="drugi" class="jumbotron">
+                        <h1><span style="font-family: Arial;">|</span>Sobe i apartmani</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+
+                        <p class="link-vise">
+                            <a href="sobe.html">Vise <i class="fas fa-arrow-right"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="row flex-column">
+                        <div class="col mb-3"><img class="img-fluid" src="slike/Index/image3.jpg" alt=""></div>
+                        <div class="col"><img class="img-fluid" src="slike/Index/image4.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="my-container">
+            <div class="row">
+                <div id="treci" class="col-md-7 col-sm-12">
+                    <img class="img-fluid" src="slike/Index/slika1.jpg">
+                </div>
+                <div class=" col-md-5 col-sm-12">
+                    <div id="treci" class="jumbotron">
+                        <h1><span style="font-family: arial;">|</span>Restoran</h1>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+                        </p>
+
+                        <p class="link-vise">
+                            <a href="restoran.html">Vise <i class="fas fa-arrow-right"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-container">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-4">
+                        <h2><i class="fas fa-bus"></i> Javni prevoz</h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h2><i class="fas fa-train"></i> Voz</h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h2><i class="fas fa-plane"></i> Avio prevoz</h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="row">
+            <div class="text-left col-lg-6 col-md-4 col-sm-12">
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+                </div>
+            <div class="text-right col-lg-6 col-md-8 col-sm-12">
+            <p>Balkanska 1, 85000, Bar | Rezervacije: +381 11 3642 069 | Info : +381 69 8420 405 | info@hotelcacak.rs</p>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2020 codeOpacity. designed by <span>Thracian42</span></p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
